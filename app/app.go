@@ -92,7 +92,7 @@ import (
 )
 
 const (
-	AccountAddressPrefix = "cosmos"
+	AccountAddressPrefix = "anone"
 	Name                 = "anone"
 )
 

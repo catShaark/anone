@@ -1,16 +1,40 @@
 accounts:
-  - name: alice
-    coins: ["20000token", "200000000stake"]
-  - name: bob
-    coins: ["10000token", "100000000stake"]
+  - name: khanh
+    coins: ["200000000000anone"]
+  - name: hung
+    coins: ["10000anone"]
+  - name: minh
+    coins: ["100anone"]
+  - name: vinh
+    coins: ["1anone"]
+  - name: jacob
+    coins: ["1000000000000anone"]
 validator:
-  name: alice
-  staked: "100000000stake"
+  name: khanh
+  staked: "100000000000anone"
 client:
   vuex:
     path: "vue/src/store"
   openapi:
     path: "docs/static/openapi.yml"
-faucet:
-  name: bob
-  coins: ["5token", "100000stake"]
+client:
+  vuex:
+    path: "vue/src/store"
+  openapi:
+    path: "docs/static/openapi.yml"
+genesis:
+  chain_id: "anone-testnet-1"
+  app_state:
+    staking:
+      params:
+        bond_denom: "anone"
+    mint:
+      params:
+        mint_denom: "anone"
+    gov:
+      deposit_params:
+        min_deposit:
+          denom: "anone"
+    crisis:
+      constant_fee:
+        denom: "anone"
